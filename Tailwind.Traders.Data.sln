@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tailwind.Traders.Data", "Tailwind.Traders.Data\Tailwind.Traders.Data.csproj", "{7CE58893-7577-4DE2-873E-04173D27ACAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tailwind.Traders.Data.Gen", "Tailwind.Traders.Data.Gen\Tailwind.Traders.Data.Gen.csproj", "{C35D8814-25DD-4433-B329-416E714B1332}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CE58893-7577-4DE2-873E-04173D27ACAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE58893-7577-4DE2-873E-04173D27ACAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE58893-7577-4DE2-873E-04173D27ACAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE58893-7577-4DE2-873E-04173D27ACAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C35D8814-25DD-4433-B329-416E714B1332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35D8814-25DD-4433-B329-416E714B1332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35D8814-25DD-4433-B329-416E714B1332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35D8814-25DD-4433-B329-416E714B1332}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {468B70A0-3518-462A-904A-78700567DA33}
+	EndGlobalSection
+EndGlobal
