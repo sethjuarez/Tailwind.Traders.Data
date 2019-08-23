@@ -6,12 +6,13 @@ using System.Net.Http;
 using System.Text;
 using System.Linq;
 
-namespace Tailwind.Traders.Data.Gen
+namespace Tailwind.Traders.Generator
 {
     public class BaseDataGenerator
     {
         private readonly Dictionary<string, string> _tables;
         private readonly Dictionary<string, Func<string>> _createTables;
+        private readonly List<object> _objects;
         public BaseDataGenerator()
         {
             _tables = new Dictionary<string, string>
@@ -32,6 +33,7 @@ namespace Tailwind.Traders.Data.Gen
                 { "Products", CreateProductsTable }
             };
 
+            _objects = new List<object>();
         }
 
         public void Seed()
@@ -41,8 +43,11 @@ namespace Tailwind.Traders.Data.Gen
                 Console.WriteLine($"-- Creating {key} table...");
                 Console.WriteLine($"{_createTables[key].Invoke()};\nGO;");
                 Console.WriteLine($"\n-- {key} Data...");
-                foreach (var item in SeedTable(key, _tables[key]))
-                    Console.WriteLine($"{item};");
+                foreach (var sql in SeedTable(key, _tables[key]))
+                {
+                    Console.WriteLine($"{sql};");
+                    //_objects.Add(o);
+                }
 
                 Console.WriteLine("GO;");
             }
@@ -122,19 +127,28 @@ namespace Tailwind.Traders.Data.Gen
 
                     while (csvReader.Read())
                     {
+                        //var o = Ject.Create(Ject.FindType(tableName));
                         var sql = new StringBuilder();
                         sql.Append($"INSERT INTO {tableName} (");
                         sql.Append(string.Join(", ", headers));
                         sql.Append(") VALUES (");
                         sql.Append(string.Join(", ", headers.Select(h => {
                             var item = csvReader.GetField(h);
+
                             if (string.IsNullOrEmpty(item) || string.IsNullOrWhiteSpace(item))
                                 return "null";
-                            else if (IsNumeric(item)) return item;
-                            else return $"\"{item}\"";
+                            else if (IsNumeric(item))
+                            {
+
+                                return item;
+                            }
+                            else
+                            {
+                                return $"\"{item}\"";
+                            }
                         })));
                         sql.Append(")");
-                        yield return sql.ToString();
+                        yield return (sql.ToString());
                     }
                 }
             }

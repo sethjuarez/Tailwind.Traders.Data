@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Address.csv" />
+    <None Remove="Data\Person.csv" />
+    <None Remove="Data\ProductBrands.csv" />
+    <None Remove="Data\ProductFeatures.csv" />
+    <None Remove="Data\ProductItems.csv" />
+    <None Remove="Data\ProductTags.csv" />
+    <None Remove="Data\ProductTypes.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\Address.csv" />
+    <EmbeddedResource Include="Data\Person.csv" />
+    <EmbeddedResource Include="Data\ProductBrands.csv" />
+    <EmbeddedResource Include="Data\ProductFeatures.csv" />
+    <EmbeddedResource Include="Data\ProductItems.csv" />
+    <EmbeddedResource Include="Data\ProductTags.csv" />
+    <EmbeddedResource Include="Data\ProductTypes.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="12.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataWorx\src\DataWorx.Core\DataWorx.Core.csproj" />
+    <ProjectReference Include="..\Tailwind.Traders.Data\Tailwind.Traders.Data.csproj" />
+  </ItemGroup>
+
+</Project>

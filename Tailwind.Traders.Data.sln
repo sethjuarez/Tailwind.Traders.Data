@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tailwind.Traders.Data", "Tailwind.Traders.Data\Tailwind.Traders.Data.csproj", "{7CE58893-7577-4DE2-873E-04173D27ACAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tailwind.Traders.Data", "Tailwind.Traders.Data\Tailwind.Traders.Data.csproj", "{7CE58893-7577-4DE2-873E-04173D27ACAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tailwind.Traders.Data.Gen", "Tailwind.Traders.Data.Gen\Tailwind.Traders.Data.Gen.csproj", "{C35D8814-25DD-4433-B329-416E714B1332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataWorx.Core", "..\DataWorx\src\DataWorx.Core\DataWorx.Core.csproj", "{28F13C70-199C-4BEB-9A82-B4097B1B60F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tailwind.Traders.Generator", "Tailwind.Traders.Generator\Tailwind.Traders.Generator.csproj", "{8546DE4C-A426-46C9-98A4-95F7890DD6B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{20EC5AF2-4171-4476-B831-E542569DDF52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{7CE58893-7577-4DE2-873E-04173D27ACAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CE58893-7577-4DE2-873E-04173D27ACAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CE58893-7577-4DE2-873E-04173D27ACAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C35D8814-25DD-4433-B329-416E714B1332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C35D8814-25DD-4433-B329-416E714B1332}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C35D8814-25DD-4433-B329-416E714B1332}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C35D8814-25DD-4433-B329-416E714B1332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F13C70-199C-4BEB-9A82-B4097B1B60F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F13C70-199C-4BEB-9A82-B4097B1B60F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F13C70-199C-4BEB-9A82-B4097B1B60F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F13C70-199C-4BEB-9A82-B4097B1B60F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8546DE4C-A426-46C9-98A4-95F7890DD6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8546DE4C-A426-46C9-98A4-95F7890DD6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8546DE4C-A426-46C9-98A4-95F7890DD6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8546DE4C-A426-46C9-98A4-95F7890DD6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20EC5AF2-4171-4476-B831-E542569DDF52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20EC5AF2-4171-4476-B831-E542569DDF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20EC5AF2-4171-4476-B831-E542569DDF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20EC5AF2-4171-4476-B831-E542569DDF52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
