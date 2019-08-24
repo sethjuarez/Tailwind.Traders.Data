@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Linq;
-using Tailwind.Traders.Data.Entities;
+using Tailwind.Traders.Data;
 
 namespace Tailwind.Traders.Generator
 {

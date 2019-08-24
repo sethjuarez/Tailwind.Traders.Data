@@ -3,7 +3,7 @@ using DataWorx.Core.Graph;
 using DataWorx.Core.Attributes;
 using DataWorx.Core.ObjectBuilders;
 
-namespace Tailwind.Traders.Generator.Person
+namespace Tailwind.Traders.Generator.Persons
 {
 
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]

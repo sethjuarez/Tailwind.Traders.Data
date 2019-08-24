@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Tailwind.Traders.Generator.Person
+namespace Tailwind.Traders.Generator.Persons
 {
     public class PersonEntity
     {

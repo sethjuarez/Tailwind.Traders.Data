@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tailwind.Traders.Data.Entities
+namespace Tailwind.Traders.Data
 {
     public class Types
     {

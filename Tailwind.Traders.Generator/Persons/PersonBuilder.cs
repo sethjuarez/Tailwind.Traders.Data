@@ -3,7 +3,7 @@ using System.Reflection;
 using DataWorx.Core.Graph;
 using DataWorx.Core.ObjectBuilders;
 
-namespace Tailwind.Traders.Generator.Person
+namespace Tailwind.Traders.Generator.Persons
 {
     public class PersonBuilder : ObjectBuilder
     {

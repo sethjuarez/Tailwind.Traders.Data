@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Tailwind.Traders.Data.Entities
+namespace Tailwind.Traders.Data
 {
     public class Products
     {

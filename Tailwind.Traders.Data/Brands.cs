@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace Tailwind.Traders.Data.Entities
+namespace Tailwind.Traders.Data
 {
-    public class Tags
+    public class Brands
     {
         public int Id { get; set; }
-        public string Value { get; set; }
+        public string Name { get; set; }
 
         public override string ToString()
         {
-            return Value;
+            return Name;
         }
     }
 }
