@@ -16,6 +16,7 @@ namespace Tailwind.Traders.Data
         public string CountryCode { get; set; }
         public string Country { get; set; }
     }
+
     public class Person
     {
         public string Title { get; set; }
@@ -45,13 +46,15 @@ namespace Tailwind.Traders.Data
         public decimal Total { get; set; }
         public DateTime OrderDate { get; set; }
     }
-    
+
     public class LineItem
     {
         public Products Product { get; set; }
         public int Quantity { get; set; }
         public decimal Discount { get; set; }
+        public decimal DiscountTotal { get; set; }
         public decimal Tax { get; set; }
+        public decimal SubTotal { get; set; }
         public decimal LineTotal { get; set; }
     }
 }
